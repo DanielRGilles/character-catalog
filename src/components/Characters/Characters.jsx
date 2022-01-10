@@ -3,7 +3,7 @@ import styles from './Characters.css';
 
 export default function Characters({ characters }) {
   return (
-    <ul aria-label="characters" className={styles.list}>
+    <ul aria-label="char" className={styles.list}>
       {characters.map((character) => (
         <li key={character.name} className={styles.item}>
           <Link to={`/characters/${character.id}`}>
@@ -20,6 +20,8 @@ export default function Characters({ characters }) {
           </Link>
         </li>
       ))}
+    
     </ul>
+
   );
 }

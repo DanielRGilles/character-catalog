@@ -35,5 +35,17 @@ describe('Character detail test', () => {
         screen.getByText('Loading character...');
         await screen.findByText('Rick Sanchez')
     })
+    it('renders the app', async () => {
+        const screen = await render(
+            <MemoryRouter initialEntries={['/characters/1']}>
+                <App/>
+            </MemoryRouter>
+        );
+        
+        
+       expect(screen).toMatchSnapshot
+       
+        
+    })
 
 })

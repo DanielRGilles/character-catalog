@@ -7,7 +7,7 @@ import './App.css';
 export default function App() {
   return (
       <Switch>
-        <Route path="/characters/:id">
+        <Route exact path="/characters/:id">
           <CharacterDetail />
         </Route>
         <Route path="/characters">
