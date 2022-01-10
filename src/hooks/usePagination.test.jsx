@@ -2,8 +2,8 @@ import { fireEvent, render, screen } from '@testing-library/react';
 import UsePaginationExample from './usePagination.example';
 
 describe('usePagination', () => {
-  skip('should be able to update the current page when requested', async () => {
-    render(<UsePaginationExample totalPages={5} />);
+  test('should be able to update the current page when requested', async () => {
+    render(<UsePaginationExample />);
 
     const firstPageButton = screen.getByRole('button', {
       name: 'view first page',

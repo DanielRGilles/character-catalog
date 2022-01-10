@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { usePagination } from './usePagination';
 
-export default function UsePaginationExample({ totalPages = 1 }) {
+export default function UsePaginationExample() {
   const {
     currentPage,
     totalPages,
